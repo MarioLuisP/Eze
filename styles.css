@@ -23,7 +23,7 @@
 
     
     /* Spacing */
-    --section-padding: 60px 0;
+    --section-padding: 30px 0;
     --container-padding: 0 15px;
     
     /* Borders & Shadows */
@@ -660,7 +660,7 @@ h1.brand-name .sub-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 0 0;
 }
 
 .parallax-background {
@@ -698,7 +698,7 @@ h1.brand-name .sub-text {
     transition: all 1.2s ease; 
 }
 .parallax-text.active {
-    opacity: 1;
+    opacity:0.6;
     transform: translateY(0);
 }
 .parallax-title {
@@ -1023,7 +1023,11 @@ footer {
         min-width: 40px; /* Esto evita que se comprima */
         min-height: 40px; /* Esto evita que se comprima */
       }
-    .carousel {
+    
+      .carousel-section {
+        padding-top: 60px; /* Para compensar el header fixed */
+    }
+      .carousel {
         height: 60vh;
     }
     
